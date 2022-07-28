@@ -15,6 +15,22 @@ a {
     transition: .3s;
 
 }
+.btn-register {
+    display: block;
+    padding: .5rem 1rem;
+    background-color: #fff;
+    color: blue;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition: .5s ease-in-out;
+}
+
+.btn-register:hover {
+    background-color: #8A8D8F;
+    border-color: white;
+    color: white;
+}
 
 body {
     font-family: 'Poppins', sans-serif;

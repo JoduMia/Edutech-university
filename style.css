@@ -117,8 +117,20 @@ body {
 }
 
 
+.eduaccordion-item {
+    border: none !important;
+}
 
-
+.edu-accordion:focus {
+    box-shadow: none;
+}
+.accordion-header {
+    margin-bottom: 0;
+    border: 2px solid green;
+    /* gap: 3rem; */
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+}
 
 
 

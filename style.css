@@ -111,13 +111,22 @@ a {
 .edu-accordion:focus {
     box-shadow: none;
 }
-.accordion-header {
-    margin-bottom: 0;
+.edu-accordion-header {
+    margin-bottom: .5rem;
     border: 2px solid green;
-    /* gap: 3rem; */
-    margin-bottom: 0.5rem;
     border-radius: 10px;
 }
+
+.edu-accordion-body {
+    padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
+    border-radius: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    background-color: #003865;
+    margin-top: -.5rem;
+}
+
 
 
 /* ======= testimonial carousel section css */

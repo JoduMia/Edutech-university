@@ -1,3 +1,4 @@
+/* Google fonts added */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Condensed:ital,wght@1,400;1,700&display=swap');
 
 * {
@@ -6,14 +7,19 @@
     box-sizing: border-box;
 }
 
-.z-index-999 {
-    z-index: 999!important;
+body {
+    font-family: 'Poppins', sans-serif;
 }
+
 
 a {
     text-decoration: none;
     transition: .3s;
 
+}
+
+.z-index-999 {
+    z-index: 999!important;
 }
 .btn-register {
     display: block;
@@ -32,13 +38,14 @@ a {
     color: white;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-}
+/* ==== nav css ========= */
 
 .edu-nav li a:hover {
     color: blue!important;
 }
+
+
+/* ====== carousel css ===== */
 .edu-carousel {
     position: relative;
 }
@@ -63,6 +70,7 @@ body {
     padding: 0 1.5rem 1rem 0;
     bottom: 5%;
 }
+
 .educap-content {
     background-color: #002d72;
 }
@@ -95,50 +103,7 @@ body {
 }
 
 
-
-
-/* ================= Media query for responsive ============= */
-@media only screen and (max-width: 768px) {
-    .educap-content p {
-        color: #fff!important;
-    }
-}
-@media only screen and (min-width: 768px) {
-
-    .register-content {
-        width: 70% !important;
-    }
-}
-
-
-@media only screen and (max-width: 1200px) {
-    .edu-caption {
-        left: 15%;
-        right: 15%;
-    }
-
-    .educap-content {
-        background-color: transparent;
-    }
-    .edu-carousel::before {
-        background-color: rgba(22, 22, 220, 0.349);
-    }
-}
-@media only screen and (max-width: 430px) {
-    .edu-caption {
-        border: none;
-        bottom: 0;
-    }
-    .educap-content p {
-        font-size: 1rem !important;
-        margin-bottom: .4rem;
-    }
-    .educap-content button {
-        font-size: 1rem !important;
-    }
-}
-
-
+/* ======== accordion css here ========= */
 .eduaccordion-item {
     border: none !important;
 }
@@ -155,15 +120,88 @@ body {
 }
 
 
+/* ======= testimonial carousel section css */
+
+.edu-carousel-control-next-icon, .edu-carousel-control-prev-icon {
+    background-color: rgb(52, 15, 238);
+    border-radius: 50%;
+}
+
+.edu-carousel-control-next, .edu-carousel-control-prev {
+    width: unset;
+}
 
 
 
-
-
-
-/* Nothing 0n click */
+/* Nothing 0n click on input button */
 input[type=search]:focus {
     border: 0;
     outline: 0;
     outline-offset: 0;
 }
+
+
+
+/* =====================
+   Media query for responsive
+============= */
+
+@media only screen and (max-width: 430px) {
+    .edu-caption {
+        border: none;
+        bottom: 0;
+    }
+    .educap-content p {
+        font-size: 1rem !important;
+        margin-bottom: .4rem;
+    }
+    .educap-content button {
+        font-size: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .educap-content p {
+        color: #fff!important;
+    }
+}
+@media only screen and (min-width: 768px) {
+
+    .register-content {
+        width: 70% !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .edu-caption {
+        left: 15%;
+        right: 15%;
+    }
+
+    .educap-content {
+        background-color: transparent;
+    }
+    .edu-carousel::before {
+        background-color: rgba(22, 22, 220, 0.349);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
